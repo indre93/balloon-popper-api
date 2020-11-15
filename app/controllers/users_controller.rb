@@ -1,8 +1,24 @@
 class UsersController < ApplicationController
 
-  def index
+  def index # GET /users
     users = User.all
-    render json: users, status: 200
+    render json: users, :except => [:updated_at]
+  end
+
+  def show # GET /users/:id
+    user = User.find(params[:id])
+    render json: user, :except => [:updated_at]
+  end
+
+  def create # POST /user
+    user = User.create(user_params)
+    render json: users, :except => [:updated_at]
+  end
+
+  private
+
+  def user_params
+    params.require(:user).permit(:username)
   end
 
 end
