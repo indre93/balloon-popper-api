@@ -1,5 +1,5 @@
 class GameSerializer
-  
+
   def initialize(game_object)
     @game = game_object
   end
@@ -7,7 +7,7 @@ class GameSerializer
   def to_serialized_json
     @game.to_json(:include => {
       :user => {:only => :username}
-    }, :except => [:user_id, :created_at, :updated_at])
+    }, :except => [:user_id, :updated_at])
   end
-  
+
 end
