@@ -9,7 +9,7 @@
 users = User.create([
   {username: 'userNumberOne'},
   {username: 'userNumberTwo'},
-  {username: 'userNumberThree'}
+  {username: 'userNumberThree'},
   {username: 'userNumberFour'},
   {username: 'userNumberFive'},
   {username: 'userNumberSix'}
