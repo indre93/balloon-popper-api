@@ -7,13 +7,19 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 users = User.create([
-  {username: 'userNumberOne'}, 
+  {username: 'userNumberOne'},
   {username: 'userNumberTwo'},
   {username: 'userNumberThree'}
+  {username: 'userNumberFour'},
+  {username: 'userNumberFive'},
+  {username: 'userNumberSix'}
 ])
 
 games = Game.create([
-  {user_id: 1, score: 50 }, 
-  {user_id: 2, score: 150 }, 
-  {user_id: 3, score: 250 }, 
+  {user_id: 1, score: 50 },
+  {user_id: 2, score: 150 },
+  {user_id: 3, score: 250 },
+  {user_id: 4, score: 530 },
+  {user_id: 5, score: 980 },
+  {user_id: 6, score: 1050 }
 ])
