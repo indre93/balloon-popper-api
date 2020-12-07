@@ -12,7 +12,11 @@ users = User.create([
   {username: 'userNumberThree'},
   {username: 'userNumberFour'},
   {username: 'userNumberFive'},
-  {username: 'userNumberSix'}
+  {username: 'userNumberSix'},
+  {username: 'userNumberSeven'},
+  {username: 'userNumberEight'},
+  {username: 'userNumberNine'},
+  {username: 'userNumberTen'}
 ])
 
 games = Game.create([
@@ -21,5 +25,9 @@ games = Game.create([
   {user_id: 3, score: 250 },
   {user_id: 4, score: 530 },
   {user_id: 5, score: 980 },
-  {user_id: 6, score: 1050 }
+  {user_id: 6, score: 1050 },
+  {user_id: 7, score: 250 },
+  {user_id: 8, score: 780 },
+  {user_id: 9, score: 430 },
+  {user_id: 10, score: 25 }
 ])
