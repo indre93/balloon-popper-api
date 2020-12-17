@@ -6,8 +6,12 @@ class GamesController < ApplicationController
   end
 
   def create # POST /game
-    game = Game.create(game_params)
-    render json: GameSerializer.new(game).to_serialized_json
+    game = Game.new(game_params)
+    if game.save
+      render json: GameSerializer.new(game).to_serialized_json
+    else
+      render jason: { errors: game.errors }
+    end
   end
 
   private
