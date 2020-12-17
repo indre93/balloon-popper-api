@@ -6,7 +6,7 @@ class GameSerializer
 
   def to_serialized_json
     @game.to_json(:include => {
-      :user => {:only => :username}
+      :user => {:only => [:user_id, :username]}
     }, :except => [:user_id, :updated_at])
   end
 
